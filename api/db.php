@@ -36,7 +36,8 @@ class DatabaseConnector
       "300" => $result["300"],
       "400" => $result["400"],
       "500" => $result["500"],
-      "1000" => $result["1000"]
+      "1000" => $result["1000"],
+      "1500" => $result["1500"]
     );
     return $array;
   }
