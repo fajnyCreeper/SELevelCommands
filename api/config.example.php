@@ -11,3 +11,4 @@ $db["host"] = "";
 $db["username"] = "";
 $db["password"] = "";
 $db["database"] = "";
+$db["table"] = "";
