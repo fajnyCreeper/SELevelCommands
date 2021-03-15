@@ -40,3 +40,4 @@ class DatabaseConnector
     );
     return $array;
   }
+}
