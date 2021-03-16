@@ -25,7 +25,7 @@ Locate `/api/config.example.php` copy the file rename to `config.php` and fill y
 ### Database
 In database, you add your custom variables with `${number}`, so for example `Howdy ${1} how are you doing?`
 
-There can be *unlimited* amount of parameters and can be placed in any order.
+There can be *unlimited* amount of variables and can be placed in any order.
 
 ### URL
 You can add custom variables by adding `params[]` parameter to your query.
