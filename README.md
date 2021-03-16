@@ -6,7 +6,7 @@ Allow you to get different bot responses depending on your user level. You can a
 Install dependencies using  `/api/composer.json`
 
 ### SQL Database
-Create table using the [levelPatterns.sql](../blob/main/levelPatterns.sql) file
+Create table using the [levelPatterns.sql](../main/levelPatterns.sql) file
 
 ### Web server
 Download the repository, place all the files in your desired destination.
