@@ -9,6 +9,7 @@ query params: key - $key from config.php
 require_once("StreamElements.php");
 require_once("config.php");
 require_once("db.php");
+require_once("variable.php");
 
 header("Content-Type: text/plain; charset=utf-8");
 
@@ -32,6 +33,16 @@ if (isset($_GET["key"], $_GET["pattern"], $_GET["level"]))
     }
     else
     {
+      if (isset($_GET["params"]))
+      {
+        foreach ($pattern as $key => $value)
+        {
+          if ($key != "pattern")
+          {
+            $pattern[$key] = SetVariables($value, $_GET["params"]);
+          }
+        }
+      }
       if ($level >= 1500 && !empty($pattern["1500"])) //User level 1500 (broadcaster)
       {
         $bot->botSay($pattern["1500"]);
